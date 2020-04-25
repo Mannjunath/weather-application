@@ -9,6 +9,8 @@ const publicpath = express.static(path.join(__dirname, "../public"));
 const templatepath = path.join(__dirname, "../templates/views");
 const partialspath = path.join(__dirname, "../templates/partials");
 
+const PORT = process.env.PORT || 4000;
+
 app.set("view engine", "hbs");
 app.set("views", templatepath);
 hbs.registerPartials(partialspath);
@@ -92,4 +94,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(4000, () => console.log("App successfull running"));
+app.listen(PORT, () =>
+  console.log(`App successfull running in the port ${PORT} `)
+);
