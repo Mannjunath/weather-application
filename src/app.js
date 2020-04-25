@@ -19,22 +19,22 @@ app.use(publicpath);
 
 app.get("", (req, res) => {
   res.render("index", {
-    title: "Weather App",
-    name: "Andrivew Mead",
+    title: "Weather",
+    name: "Ramasamudra",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About Us",
-    name: "Andrivew Mead",
+    name: "Ramasamudra",
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help Me",
-    name: "Andriew Mead",
+    name: "Ramasamudra",
   });
 });
 
@@ -81,7 +81,7 @@ app.get("/weather", (req, res) => {
 app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "Andriew Mead",
+    name: "Ramasamudra",
     error_msg: "Help Artical not found",
   });
 });

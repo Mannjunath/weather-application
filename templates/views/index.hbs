@@ -1,44 +1,23 @@
-<!DOCTYPE html>
-<html lang="">
+{{>header}}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title Page</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+<div class="container main-content">
+    {{!-- <p>{{name}}</p> --}}
 
-</head>
-
-<body>
-    {{>header}}
-    <div class="container main-content">
-        {{!-- <p>{{name}}</p> --}}
-
-        <form class="form-inline">
-            <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="Input field">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <br />
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Location Details</h3>
-            </div>
-            <div class="panel-body">
-                <p id="message-1"></p>
-                <p id="message-2"></p>
-            </div>
+    <form class="form-inline">
+        <div class="form-group">
+            <input type="text" class="form-control" id="" placeholder="Input field">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br />
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Location Details</h3>
+        </div>
+        <div class="panel-body">
+            <p id="message-1"></p>
+            <p id="message-2"></p>
         </div>
     </div>
-    {{>footer}}
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/js/app.js"></script>
-</body>
-
-</html>
+</div>
+{{>footer}}
